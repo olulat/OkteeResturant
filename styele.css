@@ -32,10 +32,17 @@ header {
   background-color: var(--color-primary);
 }
 
+/* Brand  */
 .brand {
   text-transform: capitalize;
   color: var(--color-secondary);
   font-family: var(--brand-font);
   font-size: 5rem;
   font-weight: 600;
+}
+
+/* Icon  */
+.icon {
+  font-size: 3.5rem;
+  cursor: pointer;
 }
