@@ -1,0 +1,41 @@
+:root {
+  --color-primary: #b8253b;
+  --color-secondary: #ece2d8;
+  --color-body: #ffffff;
+  --color-text: #999999;
+  --border-radius: 30px;
+
+  --brand-font: "Passions Conflict", cursive, Arial, Helvetica, sans-serif;
+  --heading-font: "IBM Plex Serif", cursive, Arial, Helvetica, serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif, Arial, Helvetica;
+}
+
+header {
+  position: fixed;
+  height: 7rem;
+  width: 100%;
+  background-color: var(--color-primary);
+}
+
+.brand {
+  text-transform: capitalize;
+  color: var(--color-secondary);
+  font-family: var(--brand-font);
+  font-size: 5rem;
+  font-weight: 600;
+}
