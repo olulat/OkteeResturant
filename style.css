@@ -1,0 +1,39 @@
+:root {
+  --color-primary: #b8253b;
+  --color-secondary: #ece2d8;
+  --color-green: #0c7e67;
+  --color-gray: #999999;
+  --color-black: #000000;
+  --border-radius: 30px;
+  --brand-font: "Passions Conflict", cursive, Arial, Helvetica, sans-serif;
+  --heading-font: "IBM Plex Serif", cursive, Arial, Helvetica, serif;
+  --body-font: "Poppins", sans-serif, Arial, Helvetica;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: var(--body-font);
+}
+
+h2,
+h3 {
+  font-family: var(--heading-font);
+}
+
+img {
+  width: 100%;
+}
+
+/* Brand  */
+.brand {
+  font-family: var(--brand-font);
+  font-size: 3rem;
+  color: var(--color-secondary);
+  letter-spacing: 1px;
+}

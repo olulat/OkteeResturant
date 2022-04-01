@@ -4,7 +4,6 @@
   --color-green: #0c7e67;
   --color-text: #999999;
   --border-radius: 30px;
-
   --brand-font: "Passions Conflict", cursive, Arial, Helvetica, sans-serif;
   --heading-font: "IBM Plex Serif", cursive, Arial, Helvetica, serif;
   --body-font: "Poppins", sans-serif, Arial, Helvetica;
@@ -117,6 +116,7 @@ body {
   background: var(--color-primary);
   padding: 4rem 2rem;
   color: #fff;
+  display: none;
 }
 
 .nav__list {
@@ -156,6 +156,7 @@ body {
   top: 7rem;
   width: 100%;
   height: 90vh;
+  margin-bottom: 12rem;
 }
 .hero__wrap img {
   width: 100%;
@@ -203,6 +204,80 @@ body {
   position: absolute;
   left: 50%;
   bottom: 4rem;
+  color: #fff;
+}
+
+/* Card */
+.grid {
+  display: grid;
+  gap: 4rem 0;
+  margin: 3rem;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.card__body {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-secondary);
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: var(--body-font);
+  color: var(--color-text);
+  display: flex;
+  padding: 0 2rem 3rem;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+.card__image {
+  overflow: hidden;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.card__image > img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-slider > img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  border-radius: var(--border-radius);
+}
+
+.card__heading {
+  margin: 3rem 0 1rem 0;
+  color: var(--color-primary);
+  font-size: 1.5rem;
+}
+
+.card__btn {
+  position: absolute;
+  background: var(--color-green);
+  color: #fff;
+  font-family: var(--body-font);
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  bottom: -1rem;
+}
+
+.card__promo,
+.card__findus,
+.card-slider {
+  display: none;
 }
 
 @media screen and (min-width: 991px) {
@@ -267,6 +342,38 @@ body {
 
   .hero .icon {
     display: none;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+    margin: 3rem auto;
+    gap: 3rem;
+    padding: 0 5rem;
+  }
+  .card {
+    max-height: 310px;
+  }
+
+  .card__heading {
+    margin: 1rem 0 0.3rem 0;
+    font-weight: 900;
+  }
+
+  .card__body {
+    flex: 1;
+    min-height: 155px;
+    font-size: 0.8rem;
+  }
+
+  .card__promo,
+  .card__findus,
+  .card-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--color-secondary);
+    border-radius: var(--border-radius);
   }
 }
 @media screen and (max-width: 320px) {
