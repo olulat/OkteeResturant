@@ -133,8 +133,40 @@ img {
   padding-bottom: 1rem;
 }
 
-/* Icons  */
+/* Inputs */
 
+.input-group {
+  display: flex;
+  background: var(--color-secondary);
+  padding: 1rem 0.8rem;
+  margin: auto 1rem;
+  border-radius: var(--border-radius);
+}
+
+.input-group .input:focus {
+  outline: none;
+}
+
+.input {
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  margin: 1rem;
+  overflow: hidden;
+  width: 90vw;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: var(--color-black);
+  background: var(--color-secondary);
+  border: none;
+}
+
+::placeholder {
+  color: var(--color-gray);
+  font-size: 1.2rem;
+}
+/* Forms  */
+
+/* Icons  */
 .icon-small {
   font-size: 1.5rem;
   color: var(--color-secondary);
