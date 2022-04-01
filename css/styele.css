@@ -229,7 +229,7 @@ body {
   font-family: var(--body-font);
   color: var(--color-text);
   display: flex;
-  padding: 0 2rem 3rem;
+  /* padding: 0 2rem 3rem; */
   border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
