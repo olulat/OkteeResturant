@@ -44,16 +44,18 @@ img {
 /* Button  */
 
 .btn {
+  display: block;
   background: none;
   border-radius: var(--border-radius);
   border: none;
   cursor: pointer;
   font-weight: 400;
   transition: box-shadow 0.3s;
+  margin: auto;
 }
 
 .btn:hover {
-  box-shadow: 0 0 20px 0px var(--color-gray);
+  box-shadow: 0 0 20px 0px var(--color-black);
 }
 
 .btn-green-color {
@@ -135,20 +137,48 @@ img {
 
 /* Hero */
 
-.hero__wrap {
+.hero-wrap {
   position: relative;
   height: 100vh;
+  width: 100vw;
 }
 
-.hero__conteent {
-  background: rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: 0;
+.hero-conteent {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  color: var(--color-secondary);
   display: flex;
-  width: 100%;
   height: 100%;
   justify-content: center;
-  align-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.hero-text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-heading {
+  font-size: 3.5rem;
+  transform: perspective(150px) translateZ(-50px);
+}
+
+.hero-icon {
+  position: absolute;
+  bottom: 2rem;
+  animation: drive-y 1s ease-in-out infinite both;
+}
+
+@keyframes drive-y {
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 /* Inputs */
