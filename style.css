@@ -78,14 +78,14 @@ img {
 /* Crads  */
 
 .card {
-  position: relative;
-  margin: 1rem;
-  max-height: 500px;
-  height: auto;
-  border-radius: var(--border-radius);
   background: var(--color-secondary);
+  border-radius: var(--border-radius);
   color: var(--color-gray);
   font-weight: 200;
+  height: auto;
+  margin: 1rem;
+  max-height: 500px;
+  position: relative;
 }
 
 .card-heading {
@@ -124,13 +124,31 @@ img {
 }
 
 .collapsible-heading {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 1rem;
-  text-transform: uppercase;
+  display: flex;
   font-size: 0.9rem;
+  gap: 1rem;
+  justify-content: center;
   padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+/* Hero */
+
+.hero__wrap {
+  position: relative;
+  height: 100vh;
+}
+
+.hero__conteent {
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
 }
 
 /* Inputs */
@@ -164,10 +182,21 @@ img {
   color: var(--color-gray);
   font-size: 1.2rem;
 }
-/* Forms  */
 
 /* Icons  */
-.icon-small {
-  font-size: 1.5rem;
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
   color: var(--color-secondary);
+}
+
+.icon-small {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.icon-large {
+  height: 3.5rem;
+  width: 3.5rem;
 }
