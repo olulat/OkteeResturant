@@ -33,6 +33,29 @@ img {
   object-position: center;
 }
 
+/* Bottom Nav  */
+.bottom-nav {
+  background: var(--color-black);
+  bottom: 0;
+  height: 67px;
+  left: 0;
+  position: sticky;
+  right: 0;
+  width: 100%;
+}
+
+.bottom-nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 30rem;
+  margin: auto;
+  height: 100%;
+}
+
+.bottom-nav .icon-wraper {
+  color: var(--color-secondary);
+}
 /* Brand */
 .brand {
   font-family: var(--brand-font);
@@ -181,6 +204,31 @@ img {
   }
 }
 
+/* Icons  */
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+  color: var(--color-secondary);
+}
+
+.icon-small {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.icon-large {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.icon-wraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Inputs */
 
 .input-group {
@@ -211,22 +259,4 @@ img {
 ::placeholder {
   color: var(--color-gray);
   font-size: 1.2rem;
-}
-
-/* Icons  */
-.icon {
-  height: 1.5rem;
-  width: 1.5rem;
-  cursor: pointer;
-  color: var(--color-secondary);
-}
-
-.icon-small {
-  height: 2.5rem;
-  width: 2.5rem;
-}
-
-.icon-large {
-  height: 3.5rem;
-  width: 3.5rem;
 }
