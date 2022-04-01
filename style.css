@@ -37,3 +37,37 @@ img {
   color: var(--color-secondary);
   letter-spacing: 1px;
 }
+
+/* Button  */
+
+.btn {
+  background: none;
+  border-radius: var(--border-radius);
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+  transition: box-shadow 0.3s;
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px 0px var(--color-gray);
+}
+
+.btn-green-color {
+  background: var(--color-green);
+  color: var(--color-secondary);
+}
+.btn-primary-color {
+  background: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.btn-small {
+  font-size: 0.9rem;
+  padding: 0.6rem 1.2rem;
+}
+
+.btn-long {
+  font-size: 0.9rem;
+  padding: 0.6rem 3.6rem;
+}
