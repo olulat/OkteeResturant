@@ -1,27 +1,45 @@
-<header>
-    <nav class="nav-bar">
+<div class="side-nav">
+    <div class="side-nav-content">
 
-        <span class="brand">YourBrand</span>
-        <div class="nav__contenet">
+        <div class="top-side-nav">
+            <span class="brand">YourBrand</span>
+            <svg class="icon icon-small">
+                <use xlink:href="icons/sprite.svg#close"></use>
+            </svg>
 
-            <div class="nav__heading">
-                <span class="brand">YourBrand</span>
-                <span class="icon"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+
+        <h2 class="side-nav-heading">Find a restaurant</h2>
+
+        <form action="#">
+            <div class="input-group">
+                <button class="btn" type="submit">
+                    <svg class="icon">
+                        <use xlink:href="icons/sprite.svg#location"></use>
+                    </svg>
+                </button>
+                <input type="text" class="input" placeholder="Search by town,city or postcode" />
+                <button class="btn" type="submit">
+                    <svg class="icon in-form-icon">
+                        <use xlink:href="icons/sprite.svg#search"></use>
+                    </svg>
+                </button>
             </div>
-         
-
-            <ul class="nav__list">
-                <li class="nav__link"><a href="#">Takeaway</a></li>
-                <li class="nav__link"><a href="#">Find Us</a></li>
-                <li class="nav__link"><a href="#">Book</a></li>
-                <li class="nav__link"><a href="#">Our menus</a></li>
-                <li class="nav__link"><a href="#">Kids</a></li>
-                <li class="nav__link"><a href="#">offers</a></li>
-                <li class="nav__link"><a href="#">Gift vouchers</a></li>
-
-              
+        </form>
+    </div>
 
 
-            </ul>
+    <ul class="list">
+        <li><a href="#" class="links">Takeaway</a></li>
+        <li><a href="#" class="links">Find us</a></li>
+        <li><a href="#" class="links">Book</a></li>
+        <li><a href="#" class="links">Our menus</a></li>
+        <li><a href="#" class="links">Kids</a></li>
+        <li><a href="#" class="links">Offers</a></li>
+        <li><a href="#" class="links">Gift vouchers</a></li>
+        <li>
+            <button class="btn btn-secondary-color btn-small">Book Now</button>
+        </li>
+    </ul>
 
-    
+</div>
