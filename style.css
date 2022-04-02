@@ -52,7 +52,7 @@ img {
 }
 
 .btn:hover {
-  box-shadow: 0 0 20px 0px var(--color-black);
+  box-shadow: 0 0 15px -5px var(--color-black);
 }
 
 .btn-green-color {
@@ -76,6 +76,18 @@ img {
 .btn-long {
   font-size: 0.9rem;
   padding: 0.6rem 3.6rem;
+}
+
+/* Call to Action  */
+.call-to-action {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
 }
 
 /* Crads  */
@@ -225,7 +237,6 @@ img {
 }
 
 .input {
-  flex: 1;
   background: var(--color-secondary);
   border-radius: var(--border-radius);
   border: none;
@@ -233,9 +244,15 @@ img {
   font-size: 1.2rem;
   font-weight: 300;
   overflow: hidden;
-  padding: 0 0.5rem;
+  padding: 0.8rem 1rem;
   text-overflow: ellipsis;
+  width: 100%;
+}
+
+.input-group .input {
+  flex: 1;
   width: 0;
+  padding: 0 0.5rem;
 }
 
 ::placeholder {
