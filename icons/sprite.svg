@@ -26,10 +26,11 @@
     <path d="M0 0h24v24H0V0z" fill="none"></path>
     <path d="M20.94 11c-.46-4.17-3.77-7.48-7.94-7.94V1h-2v2.06C6.83 3.52 3.52 6.83 3.06 11H1v2h2.06c.46 4.17 3.77 7.48 7.94 7.94V23h2v-2.06c4.17-.46 7.48-3.77 7.94-7.94H23v-2h-2.06zM12 19c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"></path>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" viewBox="0 0 24 24" id="toggle">
-    <path d="M0 0h24v24H0V0z" fill="none"></path>
-    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+  
+  <symbol xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512" id="toggle">
+    <path fill="currentColor" d="M80 96h352v32H80zm0 144h352v32H80zm0 144h352v32H80z"></path>
   </symbol>
+
   <symbol xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" version="1" fill="#ece2d8" viewBox="0 0 24 24" id="pin">
     <path d="M12,3C9.19,3,6,5.11,6,9.13c0,2.68,2,5.49,6,8.44c4-2.95,6-5.77,6-8.44C18,5.11,14.81,3,12,3z" fill-opacity=".3"></path>
     <path d="M0,0h24v24H0V0z" fill="none"></path>
