@@ -9,182 +9,312 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Poppins:ital,wght@0,200;0,300;0,,500;0,900;1,300;1,500&display=swap"rel="stylesheet"> -->
 
     <link rel="stylesheet" href="/css/style.css">
     <script src="/js/app.js" defer></script>
     <title>The Resturant</title>
 </head>
 <body>
-<nav class="nav-bars">
-    <span class="brand">YourBrand</span>
-
-
-    <div class="secondary-nav">
-        <div class="side-nav">
-            <div class="side-nav-content">
-
-                <div class="top-side-nav">
-                    <span class="brand">YourBrand</span>
-                    <svg class="icon icon-small" id="toggle-btn">
-                        <use xlink:href="icons/sprite.svg#close"></use>
-                    </svg>
-
+    <header>
+<nav class="nav-bars"> 
+   
+            <div class="container">
+                <div class="nav-content">
+                    <span class="brand to-close">YourBrand</span>
+                
+                            <div class="side-nav">
+                                    <div class="side-nav-content">
+                                        <div class="top-side-nav">
+                                            <span class="brand">YourBrand</span>
+                                            <svg class="icon icon-small" id="toggle-close-btn">
+                                                <use xlink:href="icons/sprite.svg#close"></use>
+                                            </svg>
+                                        </div>
+                                        <h2 class="side-nav-heading">Find a restaurant</h2>
+                                        <form action="#">
+                                            <div class="input-group">
+                                                <button class="btn" type="submit">
+                                                    <svg class="icon">
+                                                        <use xlink:href="icons/sprite.svg#location"></use>
+                                                    </svg>
+                                                </button>
+                                                <input type="text" class="input" placeholder="Search by town,city or postcode" />
+                                                <button class="btn" type="submit">
+                                                    <svg class="icon in-form-icon">
+                                                        <use xlink:href="icons/sprite.svg#search"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <ul class="list">
+                                        <li><a href="#" class="links">Takeaway</a></li>
+                                        <li><a href="#" class="links">Find us</a></li>
+                                        <li><a href="#" class="links">Book</a></li>
+                                        <li><a href="#" class="links">Our menus</a></li>
+                                        <li><a href="#" class="links">Kids</a></li>
+                                        <li><a href="#" class="links">Offers</a></li>
+                                        <li><a href="#" class="links">Gift vouchers</a></li>
+                                        <li>
+                                            <button class="btn btn-secondary-color btn-small">Book Now</button>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
                 </div>
-
-                <h2 class="side-nav-heading">Find a restaurant</h2>
-
-                <form action="#">
-                    <div class="input-group">
-                        <button class="btn" type="submit">
-                            <svg class="icon">
-                                <use xlink:href="icons/sprite.svg#location"></use>
-                            </svg>
-                        </button>
-                        <input type="text" class="input" placeholder="Search by town,city or postcode" />
-                        <button class="btn" type="submit">
-                            <svg class="icon in-form-icon">
-                                <use xlink:href="icons/sprite.svg#search"></use>
-                            </svg>
-                        </button>
-                    </div>
-                </form>
             </div>
-
-
-            <ul class="list">
-                <li><a href="#" class="links">Takeaway</a></li>
-                <li><a href="#" class="links">Find us</a></li>
-                <li><a href="#" class="links">Book</a></li>
-                <li><a href="#" class="links">Our menus</a></li>
-                <li><a href="#" class="links">Kids</a></li>
-                <li><a href="#" class="links">Offers</a></li>
-                <li><a href="#" class="links">Gift vouchers</a></li>
-                <li>
-                    <button class="btn btn-secondary-color btn-small">Book Now</button>
-                </li>
-            </ul>
-
-        </div>
-        <div class="bottom-nav">
-
-            <ul class="bottom-nav-list">
-                <li>
-                    <a href="" class="icon-wraper">
-                        <svg class="icon icon-small">
-                            <use xlink:href="icons/sprite.svg#menu"></use>
-                        </svg>
-                        Menu
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="icon-wraper">
-                        <svg class="icon icon-small">
-                            <use xlink:href="icons/sprite.svg#shopping"></use>
-                        </svg>
-                        Takeaway
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="icon-wraper">
-                        <svg class="icon icon-small">
-                            <use xlink:href="icons/sprite.svg#pin"></use>
-                        </svg>
-                        Find Us
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="icon-wraper">
-                        <svg class="icon icon-small">
-                            <use xlink:href="icons/sprite.svg#calendar"></use>
-                        </svg>
-                        Book
-                    </a>
-                </li>
-                <li>
-                    <svg class="icon icon-small toggle-icon" id="toggle-btn">
-                        <use xlink:href="icons/sprite.svg#toggle"></use>
-                    </svg>
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
+       
 </nav>
 
-<footer class="footer">
-    <div class="footer-heading">
-        <span class="brand">YourBrand</span>
+</header>
+<section class="hero to-close">
+    <div class="hero-wrap">
+        <img src="/images/banar-1.jpg" alt="Selection of food " class="hero__img">
 
-        <div class="footer-social">
-            <svg class="icon icon-large">
-                <use xlink:href="icons/sprite.svg#facebook"></use>
-            </svg>
+        <div class="hero-conteent">
+            <div class="hero-text">
+                <h1 class="hero-heading">Good Food ? We got You</h1>
+                <button class="btn btn-green-color btn-long">Book now</button>
 
-            <svg class="icon icon-large">
-                <use xlink:href="icons/sprite.svg#instagram"></use>
-            </svg>
-
-            <svg class="icon icon-large">
-                <use xlink:href="icons/sprite.svg#twitter"></use>
-            </svg>
+                <a href="#card-section" class="hero-icon">
+                    <svg class="icon icon-small">
+                        <use xlink:href="icons/sprite.svg#expand"></use>
+                    </svg>
+                </a>
+            </div>
         </div>
     </div>
+</section>
 
-    <div class="accordion-content">
-
-        <div class="accordion-card">
-            <input type="checkbox" name="footer-accordion" id="about" class="footer-input">
-            <label for="about" class="accordion-title">About</label>
-            <ul class="footer-list">
-                <li><a href="#" class="links">Our Story</a></li>
-                <li><a href="#" class="links">Sustainability</a></li>
-            </ul>
+<section id="card-section" class="to-close">
+<div class="container">
+    
+        <div class="grid">
+    
+    <div class="card">
+        <div class="card-heading">
+            <img src="/images/catg-1.jpg" alt="">
         </div>
-
-        <div class="accordion-card">
-            <input type="checkbox" name="footer-accordion" id="ourfood" class="footer-input">
-            <label for="ourfood" class="accordion-title">Our Food</label>
-
-            <ul class="footer-list">
-                <li><a href="#" class="links">Gluteen-free</a></li>
-                <li><a href="#" class="links">Vegan</a></li>
-                <li><a href="#" class="links">Kids</a></li>
-            </ul>
+    
+        <div class="card-body">
+            <h2 class="card-title">Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, veniam.</p>
+            <button class="btn btn-small btn-green-color">Book Now</button>
         </div>
-
-        <div class="accordion-card">
-            <input type="checkbox" name="footer-accordion" id="careers" class="footer-input">
-            <label for="careers" class="accordion-title">Careers</label>
-
-            <ul class="footer-list">
-                <li><a href="#" class="links">Jobs</a></li>
-                <li><a href="#" class="links">Gender Pay Gap Report</a></li>
-                <li><a href="#" class="links">Mondern Slavery Statement</a></li>
-                <li><a href="#" class="links">Tip Policy</a></li>
-            </ul>
+    
+    </div>
+    
+    <div class="card">
+        <div class="card-heading">
+            <img src="/images/catg5.jpg" alt="">
         </div>
-
-        <div class="accordion-card">
-            <input type="checkbox" name="footer-accordion" id="contactus" class="footer-input">
-            <label for="contactus" class="accordion-title">Contact Us</label>
-            <ul class="footer-list">
-                <li><a href="#" class="links">FAQs</a></li>
-                <li><a href="#" class="links">Guest Services</a></li>
-                <li><a href="#" class="links">Press</a></li>
-            </ul>
+    
+        <div class="card-body">
+            <h2 class="card-title">Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, veniam.</p>
+            <button class="btn btn-small btn-green-color">Book Now</button>
         </div>
-
-        <div class="accordion-card">
-
-            <h2><a href="#" class="footer-terms">Terms &#38; conditions</a></h2>
-
+    
+    </div>
+    
+    <div class="card card-type-2 card-on-big-screen">
+    
+        <form action="#" class="form">
+            <h2 class="card-title">Find Us</h2>
+            <p>Enter your location below to find your nearest Resturant!</p>
+            <div class="input-group">
+    
+                <button class="input-group-btn" type="submit">
+                    <svg class="icon">
+                        <use xlink:href="icons/sprite.svg#location"></use>
+                    </svg>
+                </button>
+                <input type="text" class="input" placeholder="Search by town,city or postcode" />
+    
+                <button class="input-group-btn" type="submit">
+                    <svg class="icon in-form-icon">
+                        <use xlink:href="icons/sprite.svg#search"></use>
+                    </svg>
+                </button>
+            </div>
+    
+        </form>
+    
+    
+    </div>
+    
+    <div class="card">
+        <div class="card-heading">
+            <img src="/images/catg-2.jpg" alt="">
         </div>
-        <div class="accordion-card">
-            <h2><a href="#" class="footer-privacy">Privacy Notice</a></h2>
+    
+        <div class="card-body">
+            <h2 class="card-title">Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, veniam.</p>
+            <button class="btn btn-small btn-primary-color">Order Now</button>
+        </div>
+    
+    </div>
+    
+    <div class="card card-type-2 slider-wrap">
+    
+        <div class="slider-container">
+            <img src="/images/item-5.jpg" alt="">
+            <button class="btn btn-small btn-green-color">Book Now</button>
+        </div>
+    
+        <div class="slider-container">
+            <img src="/images/item-2.jpg" alt="">
+            <button class="btn btn-small btn-primary-color">Book Now</button>
+        </div>
+    
+        <div class="slider-container">
+            <img src="/images/item-1.jpg" alt="">
+            <button class="btn btn-small btn-green-color">Book Now</button>
+        </div>
+    
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    
+    
+    </div>
+    
+    <div class="card card-type-2 call-to-action card-on-big-screen">
+    
+        <h2 class="card-title">Sign up for all the latest news!</h2>
+        <p>Sign up to Our Resturant emails to be the first to hear all the latest news and receive exclusive offers.</p>
+        <input type="email" class="input" placeholder="Enter your email" />
+    
+    
+        <button class="btn btn-small btn-green-color">Sign up</button>
+    </div>
+    
+    
+    
+    
+    
+    <div class="call-to-action call-to-action-small-screen">
+    
+        <h2 class="card-title">Sign up for all the latest news!</h2>
+        <p>Sign up to Our Resturant emails to be the first to hear all the latest news and receive exclusive offers.</p>
+        <input type="email" class="input" placeholder="Enter your email" />
+        <button class="btn btn-long btn-green-color" type="submit">Sign up</button>
+    
+    </div>
+    
+    </div>
+</div>
+</section>
 
+    <div class="bottom-nav">
+        <ul class="bottom-nav-list">
+            <li>
+                <a href="" class="icon-wraper">
+                    <svg class="icon icon-small">
+                        <use xlink:href="icons/sprite.svg#menu"></use>
+                    </svg>
+                    Menu
+                </a>
+            </li>
+            <li>
+                <a href="" class="icon-wraper">
+                    <svg class="icon icon-small">
+                        <use xlink:href="icons/sprite.svg#shopping"></use>
+                    </svg>
+                    Takeaway
+                </a>
+            </li>
+            <li>
+                <a href="" class="icon-wraper">
+                    <svg class="icon icon-small">
+                        <use xlink:href="icons/sprite.svg#pin"></use>
+                    </svg>
+                    Find Us
+                </a>
+            </li>
+            <li>
+                <a href="" class="icon-wraper">
+                    <svg class="icon icon-small">
+                        <use xlink:href="icons/sprite.svg#calendar"></use>
+                    </svg>
+                    Book
+                </a>
+            </li>
+            <li>
+                <svg class="icon icon-small toggle-icon" id="toggle-btn">
+                    <use xlink:href="icons/sprite.svg#toggle"></use>
+                </svg>
+            </li>
+    
+        </ul>
+    </div>
+
+
+<footer class="footer to-close">
+    <div class="container">
+    
+        <div class="footer-content">
+            <div class="footer-heading">
+                <span class="brand">YourBrand</span>
+                <div class="footer-social">
+                    <svg class="icon icon-large">
+                        <use xlink:href="icons/sprite.svg#facebook"></use>
+                    </svg>
+                    <svg class="icon icon-large">
+                        <use xlink:href="icons/sprite.svg#instagram"></use>
+                    </svg>
+                    <svg class="icon icon-large">
+                        <use xlink:href="icons/sprite.svg#twitter"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-card">
+                    <input type="checkbox" name="footer-accordion" id="about" class="footer-input">
+                    <label for="about" class="accordion-title">About</label>
+                    <ul class="footer-list">
+                        <li><a href="#" class="links">Our Story</a></li>
+                        <li><a href="#" class="links">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="accordion-card">
+                    <input type="checkbox" name="footer-accordion" id="ourfood" class="footer-input">
+                    <label for="ourfood" class="accordion-title">Our Food</label>
+                    <ul class="footer-list">
+                        <li><a href="#" class="links">Gluteen-free</a></li>
+                        <li><a href="#" class="links">Vegan</a></li>
+                        <li><a href="#" class="links">Kids</a></li>
+                    </ul>
+                </div>
+                <div class="accordion-card">
+                    <input type="checkbox" name="footer-accordion" id="careers" class="footer-input">
+                    <label for="careers" class="accordion-title">Careers</label>
+                    <ul class="footer-list">
+                        <li><a href="#" class="links">Jobs</a></li>
+                        <li><a href="#" class="links">Gender Pay Gap Report</a></li>
+                        <li><a href="#" class="links">Mondern Slavery Statement</a></li>
+                        <li><a href="#" class="links">Tip Policy</a></li>
+                    </ul>
+                </div>
+                <div class="accordion-card">
+                    <input type="checkbox" name="footer-accordion" id="contactus" class="footer-input">
+                    <label for="contactus" class="accordion-title">Contact Us</label>
+                    <ul class="footer-list">
+                        <li><a href="#" class="links">FAQs</a></li>
+                        <li><a href="#" class="links">Guest Services</a></li>
+                        <li><a href="#" class="links">Press</a></li>
+                    </ul>
+                </div>
+                <div class="accordion-card">
+                    <h2><a href="#" class="footer-terms">Terms &#38; conditions</a></h2>
+                </div>
+                <div class="accordion-card">
+                    <h2><a href="#" class="footer-privacy">Privacy Notice</a></h2>
+                </div>
+              </div>
         </div>
     </div>
 
