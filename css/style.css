@@ -360,6 +360,7 @@ img {
   top: 0;
   left: 0;
   z-index: 9999;
+  padding: 1rem 0;
 }
 
 .bottom-nav {
@@ -526,7 +527,7 @@ overflow: hidden;
 
   .hero-wrap {
     position: relative;
-    top: 3.9rem;
+    top: 4rem;
     height: 40vh;
     margin-bottom: 6rem;
   }

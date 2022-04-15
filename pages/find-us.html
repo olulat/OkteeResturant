@@ -6,16 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600&family=Passions+Conflict&family=Poppins:ital,wght@0,100;0,300;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
 
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/find-us.css">
     <script src="/js/app.js" defer></script>
-    <title>The Resturant</title>
+    <title>Find a Resturant Location</title>
 </head>
 <body>
-    
+<header>
+    <nav class="nav-bars">
+        <a href="/"><span class="brand to-close">YourBrand</span></a>
+    </nav>
+</header>
+
+<main class="main">
+    <div class="flex-wrap">
+        <div class="location-find-wraper">
+            <div class="loction-find">
+            <div class="location heading">
+            <h2 class="location-title">Find a Location</h2>
+            <p>Search by town, city, or postcode</p>
+            <form action="#">
+                <div class="input-group">
+                    <button class="btn" type="submit">
+                        <svg class="icon">
+                            <use xlink:href="/icons/sprite.svg#location"></use>
+                        </svg>
+                    </button>
+                    <input type="search" class="input" placeholder="Search by town,city or postcode" />
+                    <button class="btn" type="submit">
+                        <svg class="icon in-form-icon">
+                            <use xlink:href="/icons/sprite.svg#search"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+            </div>
+            </div>
+            <p class="all-location">
+                Use our locator to find a Frankie & Benny's restaurant near you or <a href="" class="all-location-link">browse all locations!</a>
+            </p>
+        </div>
+        <div class="map-img">
+            <!-- <img src="/images/map.png" alt="map-"> -->
+        </div>
+    </div>
+</main>
+
+
 </body>
 </html>

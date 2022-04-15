@@ -1,0 +1,89 @@
+:root {
+    --color-primary: #b8253b;
+    --color-secondary: #ece2d8;
+    --color-green: #0c7e67;
+    --color-gray: #999999;
+    --color-black: #000000;
+    --border-radius: 30px;
+    --brand-font: "Passions Conflict", cursive, Arial, Helvetica, sans-serif;
+    --body-font: "Poppins", sans-serif, Arial, Helvetica;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--body-font);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+
+::placeholder {
+    color: var(--color-black);
+    font-size: .8rem;
+    font-style: italic;
+   
+}
+
+.main{
+    background: var(--color-secondary);
+}
+
+.loction-find{
+   margin-top: 4rem;
+    background: var(--color-green);
+   color: var(--color-secondary);
+    padding: 2rem 1rem 1rem;
+}
+
+.location-title{
+  font-family: var(--body-font);
+}
+
+.all-location{
+    color: var(--color-black); 
+    font-family: var(--body-font);
+    padding:1rem 1rem 2rem;
+}
+
+.all-location-link{
+    color: var(--color-green);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.map-img{
+    display: none;
+}
+
+@media screen and (min-width: 991px) {
+
+    .main {
+       height: 100vh;
+    }
+
+.flex-wrap{
+   display: flex;
+height: 100vh;
+}
+.map-img {
+    margin-top: 4.8rem;
+    display: block;
+    width: 100%;
+    display: block;
+    background: url(/images/map.png);
+    background-size: 100% 100%;
+}
+
+
+}
