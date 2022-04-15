@@ -315,7 +315,7 @@ img {
   position: relative;
   display: flex;
   align-items: center;
-  background: var(--color-secondary);
+  background: #fff;
   padding: 0.5rem;
   margin: 1rem auto;
   border-radius: var(--border-radius);
@@ -339,10 +339,11 @@ img {
   width: 100%;
 }
 
-.input-group .inpu {
+.input-group .input {
   flex: 1;
   width: 0;
   padding: 0 0.5rem;
+  background: #fff;
 }
 
 ::placeholder {
@@ -491,6 +492,7 @@ img {
 .footer-input:checked ~ .footer-list {
   display: block;
 }
+
 /* Grid  */
 
 .grid {
@@ -610,6 +612,10 @@ overflow: hidden;
 
   .bottom-nav {
     display: none;
+  }
+
+  .scroll-stop {
+    overflow: visible;
   }
 
 
