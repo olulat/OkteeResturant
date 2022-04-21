@@ -1,0 +1,94 @@
+:root {
+    --color-primary: #b8253b;
+    --color-secondary: #ece2d8;
+    --color-green: #0c7e67;
+    --color-gray: #999999;
+    --color-black: #000000;
+    --border-radius: 20px;
+    --brand-font: "Passions Conflict", cursive, Arial, Helvetica, sans-serif;
+    --body-font: "Poppins", sans-serif, Arial, Helvetica;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--body-font);
+}
+
+.main{
+    margin-top:4.7rem;
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.tittle{
+background:var(--color-green);
+padding: 1.7rem ;
+text-align: center;
+color: var(--color-secondary);
+font-size: 1.6rem;
+font-weight: 900;
+}
+
+.all-tittle{
+   background: var(--color-secondary);
+   padding: 1rem;
+   font-size: .8rem;
+   color: var(--color-black);
+}
+
+.location-list{
+    display: grid;
+    gap: 1.4rem;
+    padding: 1rem 1rem 3rem;
+}
+
+.location-list a{
+    text-decoration: underline;
+    color: var(--color-green);
+    font-weight: 600;
+    margin-right: .5rem;
+}
+
+.location-list a:hover{
+    text-decoration: none;
+}
+
+.section-wrap {
+    max-width: 830px;
+}
+@media screen and (min-width: 768px) {
+.main :nth-child(1){
+    order: 1;
+}
+
+.tittle {
+ border-radius: var(--border-radius);
+width: 620px;
+}
+.section-wrap {
+    padding: 2rem;
+    margin: 0 auto;
+}
+.location-list {
+grid-template-columns: repeat(2, 1fr);
+padding-left: 1rem;
+}
+   
+}
+@media screen and (min-width: 991px) {
+.tittle {
+    width: 750px;
+}
+.location-list {
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+   
+}
