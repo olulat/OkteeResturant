@@ -1,0 +1,318 @@
+:root {
+    --color-primary: #b8253b;
+    --color-secondary: #ece2d8;
+    --color-green: #0c7e67;
+    --color-gray: #999999;
+    --color-black: #000000;
+    --border-radius: 20px;
+    --brand-font: "Passions Conflict", cursive, Arial, Helvetica, sans-serif;
+    --body-font: "Poppins", sans-serif, Arial, Helvetica;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--body-font);
+}
+img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+}
+.brand{
+    color: #C5122C;
+    font-family: var(--brand-font);
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 1px;
+  
+}
+
+.giftcard-navbars{
+   position: fixed;
+   width: 100%;
+   top: 0;
+    z-index: 9999;
+    background: #fff;
+}
+.giftcard-navbars-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.mobile-hide-span{
+   display: none; 
+}
+
+.basket{
+    position: relative;
+    left: 7px;
+    background: #007D44;
+    color: #fff;
+    padding:.3rem .6rem;
+    font-size: .8rem;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-weight: 600;
+    font-family: var(--body-font);
+    
+}
+
+.basket-counter{
+    right:0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 3px solid #F3923A;
+    border-radius: 100%;
+    height: 45px;
+    width: 45px;
+    z-index: 100;
+   
+}
+
+.basket-number{
+   background: #F3923A;
+   color: #fff;
+   font-size:1.3rem;
+   font-weight: 600;
+    height: 35px;
+    width: 35px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.cart-wraper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+}
+
+.main{
+    margin-top: 5.8rem;
+}
+
+.banner{
+background: #C5122C;
+}
+
+.banner-wraper{
+    position: relative;
+   display: grid;
+   grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    height: 600px;
+
+}
+
+.banner-img{
+display: block;
+height: 300px;
+
+}
+
+.banner-text{
+display: flex;
+height: 300px;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+padding: 1rem;
+color: #fff;
+text-align: center;
+}
+
+.banner-heading{
+    font-size: 1.5rem;
+    line-height:1;
+    padding-bottom: 1rem;
+  
+}
+
+.voucher-grid{
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.card{
+    display: flex;
+    gap: 1rem;
+    color: var(--color-primary);
+    background: var(--color-secondary);
+    padding-bottom: 1rem;
+    height: 150px;
+    cursor: pointer;
+}
+.card:hover{
+    background: #FFF9F0;
+}
+
+.card-body{
+   line-height: .8;
+   display: flex;
+   flex-direction: column;
+
+}
+
+.card-heading{
+color: var(--color-secondary);
+background: var(--color-primary);
+margin: .5rem;
+height: 100%;
+padding-right: 1rem;
+}
+
+.gift-price{
+    font-size: 3.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    text-shadow: 0px 35px 0px rgb(236 226 216 / 0.8),
+    0px 70px 0px rgb(236 226 216 / 0.5);
+    
+    
+}
+
+.card-gift {
+    display: block;
+    font-family: var(--brand-font);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.card-voucher {
+    display: block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+}
+
+.card-footer{
+    font-size: 1rem;
+    margin-top: auto;
+}
+
+.voucher-terms {
+    max-width: 700px;
+    margin: auto;
+    font-family: var(--body-font);
+    font-weight: 600;
+    padding: 1rem 0;
+
+}
+
+.footer{
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.privacy-policy{
+    color: var(--color-black);
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.privacy-policy:hover{
+    text-decoration: underline;
+}
+
+.copy-right{
+    display: block;
+    margin-top: .5rem;
+    font-size: .7rem;
+    color: var(--color-gray);
+    font-weight: 600;
+
+}
+
+
+@media screen and (min-width: 380px) {
+    .voucher-grid {
+        grid-template-columns: repeat(2, 1fr);
+        overflow: hidden;
+    }
+    
+    .card-voucher {
+        font-size: 1rem;
+    }
+}
+
+
+
+@media screen and (min-width: 600px) {
+  
+.mobile-hide-span {
+    display: inline-block;
+}
+.brand {
+    font-size: 3.5rem;
+}
+.card-footer {
+    font-size: 2rem;
+}
+
+.basket {
+      font-size: 1rem; 
+}
+
+.banner-text-wraper{
+    width: 80%;
+}
+
+.banner-heading {
+    font-size: 3.2rem;
+}
+
+.card-gift {
+    font-size: 3rem;
+  
+}
+
+.card-voucher {
+    font-size: 2.5rem;
+}
+
+}
+
+@media screen and (min-width: 960px) {
+.banner-wraper {
+    grid-template-columns: repeat(2, 1fr);
+    height: 300px;
+}
+
+.banner-img {
+  height: 300px;
+}
+
+.banner-text {
+    height: 300px;
+}
+.banner-text-wraper {
+    width: 100%;
+}
+
+.banner-heading {
+    font-size: 2rem;
+}
+
+}
