@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600&family=Passions+Conflict&family=Poppins:ital,wght@0,100;0,300;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/menu.css">
+
+    <!-- <script src="/js/app.js" defer></script> -->
+    <script src="/js/menu.js" defer></script>
+    <title>The Resturant</title>
+</head>
+
+<body>
+
+    <div class="brand-wrap">
+        <span class="brand">YourBrand</span>
+    </div>
+<section class="menue-hero">
+    <div class="menue-hero-wrap">
+        <img src="/images/banar-1.jpg" alt="Selection of food " class="hero__img">
+
+        <div class="menue-hero-content">
+            <h2 class="our-menu">Our Menus</h2>
+
+
+    <form action="#">
+            <div class="input-group">
+                <button class="icon-btn" type="submit">
+                    <svg class="icon">
+                        <use xlink:href="/icons/sprite.svg#location"></use>
+                    </svg>
+                </button>
+                <input type="text" class="input" placeholder="Search by town,city or postcode" />
+                <button class="icon-btn" type="submit">
+                    <svg class="icon in-form-icon">
+                        <use xlink:href="/icons/sprite.svg#search"></use>
+                    </svg>
+                </button>
+            </div>
+        </form>
+        </div>
+    </div>
+
+</section>
+
+<section class="filter-section">
+       
+    <div class="dropdown-all-wrap">
+       
+        <div class="wraper-flex">
+            <div class="menus-options">
+                <input type="checkbox" name="menus-accordion" id="menus" class="menu-input">
+                <label for="menus" class="menus-check">Main</label>
+            
+                <ul class="menus-optinos-list">
+            
+                                <li><a href="#" class="main">Main</a></li>
+                                <li><a href="#" class="breakfast">Breakfast</a></li>
+                                <li><a href="#" class="lunch">Lunch</a></li>
+                                <li><a href="#" class="gfl">Gluten Free Lunch</a></li>
+                                <li><a href="#" class="evening">Evening</a></li>
+                                <li><a href="#" class="drink">Drinks</a></li>
+                                <li><a href="#" class="desserts">Desserts</a></li>
+                                <li><a href="#" class="gf">Gluten-free</a></li>
+                                <li><a href="#" class="vegan">Vegan</a></li>
+                                <li><a href="#" class="kids">Kids</a></li>
+                                <li><a href="#" class="kids-gf">Kids gluten-free</a></li>
+                </ul>
+                </div>
+                <a href="#" class="download-menu">DOWNLOAD MENU</a>
+                   
+                <div class="wrap-of-key">
+
+                    <div class="switch-wrap">
+                    
+                        <div class="show-text">
+                            <p class="switch-text">Hide Nutrition
+                            </p>
+                            <label class="switch-btn">
+                                <input type="checkbox" class="switch-input">
+                                <span class="switch-slider switch-round"></span>
+                                <span class="no">NO</span>
+                                <span class="yes">YES</span>
+                            </label>
+                    
+                        </div>
+                    </div>
+
+                    <div class="diet-optino-wrap">
+                        <p class="diet-option-text">Dietart Filters</p>
+                        <div class="diet-option-icon"></div>
+                    </div>
+    
+                        <div class="order-btn">
+                            <button class="btn btn-color-secondary">Order Now</button>
+                        </div>
+                    </div>
+        </div>
+
+                <div class="diet-dropdown">
+                
+                    
+                        <div class="show-text">
+                            <p>Do you wish to exclude dishes that 'May Contain' the selected allergen
+                            </p>
+                
+                            <span class="show-span">
+                                <label class="switch-btn-2">
+                                    <input type="checkbox" class="switch-input-2">
+                                    <span class="switch-slider-2 switch-round-2"></span>
+                                </label>
+                            </span>
+                        </div>
+                
+                <div class="diet-flex-wrap">
+                    
+                        <div class="show-me-wrap">
+                            <h3 class="dait-heading">Show me:</h3>
+                            <ul class="diet-list show-list">
+                                <li>
+                                    <input type="checkbox" name="light" id="light">
+                                    <label for="light">Lighter</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="new" id="new">
+                                    <label for="new">New</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="vegetarians" id="vegetarians">
+                                    <label for="vegetarians">Vegetarians</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="vegan" id="vegan">
+                                    <label for="vegan">Vegans</label>
+                                </li>
+                            </ul>
+                        </div>
+                    
+                    
+                        <div class="does-not-wrap">
+                            <h3 class="dait-heading">Does not contain:</h3>
+                            <ul class="diet-list does-not-list">
+                                <li>
+                                    <input type="checkbox" name="gluten-cereal" id="gluten-cereal">
+                                    <label for="gluten-cereal">Gluten Cereals</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="peanuts" id="peanuts">
+                                    <label for="peanuts">Peanuts</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="tree-nuts" id="tree-nuts">
+                                    <label for="tree-nuts">Tree Nuts</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="eggs" id="eggs">
+                                    <label for="eggs">Eggs</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="milk" id="milk">
+                                    <label for="milk">Milk</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="celery" id="celery">
+                                    <label for="celery">Celery</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="fish" id="fish">
+                                    <label for="fish">Fish</label>
+                                </li>
+                            </ul>
+                    <a href="#" class="clear-btn">Clear All</a>
+                
+                        </div>
+                </div>
+
+                
+                <button class="btn btn-color-green">Done</button>
+                </div>
+</div>
+    
+    <div class="selection-wrap">
+
+            <button class="chevron-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="36" height="36"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                    <g transform="rotate(90 12 12) translate(24 0) scale(-1 1)">
+                        <path fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                            d="m4 9l8 8l8-8" />
+                    </g>
+                </svg>
+            </button>
+
+<ul class="selection-nav">
+    <li><a href="#" class="selction-links active">All</a></li>
+    <li><a href="#" class="selction-links">Starters</a></li>
+    <li><a href="#" class="selction-links">Burgers & Hot Dogs</a></li>
+    <li><a href="#" class="selction-links">Salads</a></li>
+    <li><a href="#" class="selction-links">Pasta & Risotto</a></li>
+    <li><a href="#" class="selction-links">Pizza</a></li>
+    <li><a href="#" class="selction-links">Grills</a></li>
+</ul>
+            <button class="chevron-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="36" height="36"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                    <g transform="rotate(-90 12 12)">
+                        <path fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                            d="m4 9l8 8l8-8" />
+                    </g>
+                </svg>
+            </button>
+       
+
+    </div>
+
+
+</section>
+
+
+<section class="starters-menues">
+
+
+    <div class="container">
+
+        <div class="menu-heanding">
+            <h2 class="menu-main-heading">Starters</h2>
+        </div>
+        <div class="menu-items">
+        <div class="grid-1">
+        
+            <div class="menu-card">
+        
+        
+                <div class="card-heading">
+                    <h4>Garlic Pizza Bread 4.50</h4>
+                    <div class="menu-card-text">
+                        <span>764 kcal</span>
+                        <div class="card-icon">
+                            <span class="info-icon"></span>
+                        </div>
+                        <div class="card-icon v-icon">
+                            <p class="tooltiptext-leaf-2">suitable for vegetarians</p>
+                            <span class="leaf-2">V</span>
+                        </div>
+                        <div class="card-icon vg-icon">
+                            <p class="tooltiptext-leaf-1">Suitable for Vegans</p>
+                            <span class="leaf-1">VG</span>
+                        </div>
+        
+                        <div class="card-icon new-icon">
+                            <p class="tooltiptext-new">New</p>
+                        <span class="new-text">NEW</span>
+                        </div>
+        
+                    </div>
+        
+        
+                </div>
+                <div class="card-body">
+                    <p>Big enough for 2 people</p>
+                    <h4>Add:</h4>
+        
+                            <span class="menu-card-text">Mozzarella 0.50 936 kcal
+                                <div class="card-icon">
+                                    <span class="info-icon"></span>
+                                </div>
+        
+                                <div class="card-icon v-icon">
+                                    <p class="tooltiptext-leaf-2">suitable for vegetarians</p>
+                                    <span class="leaf-2">V</span>
+                                </div>
+                            </span>
+        
+                        <span class="menu-card-text">Mozzarella 0.50 936 kcal
+                            <div class="card-icon">
+                                <span class="info-icon"></span>
+                            </div>
+        
+                            <div class="card-icon vg-icon">
+                                <p class="tooltiptext-leaf-1">Suitable for Vegans</p>
+                                <span class="leaf-1">VG</span>
+                            </div>
+                        </span>
+        
+        
+                </div>
+            </div>
+            <div class="menu-card">
+            <div class="card-img">
+                <img src="/images/item-5.jpg" alt="food">
+            </div>
+                <div class="card-heading">
+                    <h4>Garlic Pizza Bread 4.50</h4>
+                    <div class="menu-card-text">
+                        <span>764 kcal</span>
+        
+                        <div class="card-icon">
+                            <span class="info-icon"></span>
+                        </div>
+        
+                        <div class="card-icon v-icon">
+                            <p class="tooltiptext-leaf-2">suitable for vegetarians</p>
+                            <span class="leaf-2">V</span>
+                        </div>
+        
+        
+                        <div class="card-icon vg-icon">
+                            <p class="tooltiptext-leaf-1">Suitable for Vegans</p>
+                            <span class="leaf-1">VG</span>
+                        </div>
+        
+                        <div class="card-icon new-icon">
+                            <p class="tooltiptext-new">New</p>
+                            <span class="new-text">NEW</span>
+                        </div>
+        
+                    </div>
+        
+        
+        
+                </div>
+        
+                <div class="card-body">
+                    <p>Big enough for 2 people</p>
+                    <h4>Add:</h4>
+        
+                    <span class="menu-card-text">Mozzarella 0.50 936 kcal
+                        <div class="card-icon">
+                            <span class="info-icon"></span>
+                        </div>
+        
+                        <div class="card-icon v-icon">
+                            <p class="tooltiptext-leaf-2">suitable for vegetarians</p>
+                            <span class="leaf-2">V</span>
+                        </div>
+                    </span>
+        
+                    <span class="menu-card-text">Mozzarella 0.50 936 kcal
+                        <div class="card-icon">
+                            <span class="info-icon"></span>
+                        </div>
+        
+                        <div class="card-icon vg-icon">
+                            <p class="tooltiptext-leaf-1">Suitable for Vegans</p>
+                            <span class="leaf-1">VG</span>
+                        </div>
+                    </span>
+        
+        
+                </div>
+            </div>
+        
+        <div class="menu-card">
+        
+            <div class="card-heading">
+                <h4>Garlic Pizza Bread 4.50</h4>
+                <div class="menu-card-text">
+                    <span>764 kcal</span>
+        
+                    <div class="card-icon">
+                        <span class="info-icon"></span>
+                    </div>
+        
+                    <div class="card-icon v-icon">
+                        <p class="tooltiptext-leaf-2">suitable for vegetarians</p>
+                        <span class="leaf-2">V</span>
+                    </div>
+        
+        
+                    <div class="card-icon vg-icon">
+                        <p class="tooltiptext-leaf-1">Suitable for Vegans</p>
+                        <span class="leaf-1">VG</span>
+                    </div>
+        
+                    <div class="card-icon new-icon">
+                        <p class="tooltiptext-new">New</p>
+                        <span class="new-text">NEW</span>
+                    </div>
+        
+                </div>
+        
+        
+        
+            </div>
+        
+            <div class="card-body">
+                <p>Big enough for 2 people</p>
+                <h4>Add:</h4>
+        
+                <span class="menu-card-text">Mozzarella 0.50 936 kcal
+                    <div class="card-icon">
+                        <span class="info-icon"></span>
+                    </div>
+        
+                    <div class="card-icon v-icon">
+                        <p class="tooltiptext-leaf-2">suitable for vegetarians</p>
+                        <span class="leaf-2">V</span>
+                    </div>
+                </span>
+        
+                <span class="menu-card-text">Mozzarella 0.50 936 kcal
+                    <div class="card-icon">
+                        <span class="info-icon"></span>
+                    </div>
+        
+                    <div class="card-icon vg-icon">
+                        <p class="tooltiptext-leaf-1">Suitable for Vegans</p>
+                        <span class="leaf-1">VG</span>
+                    </div>
+                </span>
+        
+        
+            </div>
+        </div>
+        <div class="menu-card">
+        <div class="card-img">
+            <img src="/images/item-6.jpg" alt="food">
+        </div>
+            <div class="card-heading">
+                <h4>Garlic Pizza Bread 4.50</h4>
+                <div class="menu-card-text">
+                    <span>764 kcal</span>
+        
+                    <div class="card-icon">
+                        <span class="info-icon"></span>
+                    </div>
+        
+                    <div class="card-icon v-icon">
+                        <p class="tooltiptext-leaf-2">suitable for vegetarians</p>
+                        <span class="leaf-2">V</span>
+                    </div>
+        
+        
+                    <div class="card-icon vg-icon">
+                        <p class="tooltiptext-leaf-1">Suitable for Vegans</p>
+                        <span class="leaf-1">VG</span>
+                    </div>
+        
+                    <div class="card-icon new-icon">
+                        <p class="tooltiptext-new">New</p>
+                        <span class="new-text">NEW</span>
+                    </div>
+        
+                </div>
+        
+        
+        
+            </div>
+        
+            <div class="card-body">
+                <p>Big enough for 2 people</p>
+                <h4>Add:</h4>
+        
+                <span class="menu-card-text">Mozzarella 0.50 936 kcal
+                    <div class="card-icon">
+                        <span class="info-icon"></span>
+                    </div>
+        
+                    <div class="card-icon v-icon">
+                        <p class="tooltiptext-leaf-2">suitable for vegetarians</p>
+                        <span class="leaf-2">V</span>
+                    </div>
+                </span>
+        
+                <span class="menu-card-text">Mozzarella 0.50 936 kcal
+                    <div class="card-icon">
+                        <span class="info-icon"></span>
+                    </div>
+        
+                    <div class="card-icon vg-icon">
+                        <p class="tooltiptext-leaf-1">Suitable for Vegans</p>
+                        <span class="leaf-1">VG</span>
+                    </div>
+                </span>
+        
+        
+            </div>
+        </div>
+        </div>
+           <div class="grid-2">
+        <div class="menu-card">
+        
+            <div class="card-heading">
+                <h4>Garlic Pizza Bread 4.50</h4>
+                <div class="menu-card-text">
+                    <span>764 kcal</span>
+        
+                    <div class="card-icon">
+                        <span class="info-icon"></span>
+                    </div>
+        
+                    <div class="card-icon v-icon">
+                        <p class="tooltiptext-leaf-2">suitable for vegetarians</p>
+                        <span class="leaf-2">V</span>
+                    </div>
+        
+        
+                    <div class="card-icon vg-icon">
+                        <p class="tooltiptext-leaf-1">Suitable for Vegans</p>
+                        <span class="leaf-1">VG</span>
+                    </div>
+        
+                    <div class="card-icon new-icon">
+                        <p class="tooltiptext-new">New</p>
+                        <span class="new-text">NEW</span>
+                    </div>
+        
+                </div>
+        
+        
+        
+            </div>
+        
+            <div class="card-body">
+                <p>Big enough for 2 people</p>
+                <h4>Add:</h4>
+        
+                <span class="menu-card-text">Mozzarella 0.50 936 kcal
+                    <div class="card-icon">
+                        <span class="info-icon"></span>
+                    </div>
+        
+                    <div class="card-icon v-icon">
+                        <p class="tooltiptext-leaf-2">suitable for vegetarians</p>
+                        <span class="leaf-2">V</span>
+                    </div>
+                </span>
+        
+                <span class="menu-card-text">Mozzarella 0.50 936 kcal
+                    <div class="card-icon">
+                        <span class="info-icon"></span>
+                    </div>
+        
+                    <div class="card-icon vg-icon">
+                        <p class="tooltiptext-leaf-1">Suitable for Vegans</p>
+                        <span class="leaf-1">VG</span>
+                    </div>
+                </span>
+        
+        
+            </div>
+        </div>
+        <div class="menu-card">
+        
+            <div class="card-heading">
+                <h4>Garlic Pizza Bread 4.50</h4>
+                <div class="menu-card-text">
+                    <span>764 kcal</span>
+        
+                    <div class="card-icon">
+                        <span class="info-icon"></span>
+                    </div>
+        
+                    <div class="card-icon v-icon">
+                        <p class="tooltiptext-leaf-2">suitable for vegetarians</p>
+                        <span class="leaf-2">V</span>
+                    </div>
+        
+        
+                </div>
+        
+        
+        
+            </div>
+        
+            <div class="card-body">
+                <p>Big enough for 2 people</p>
+        
+        
+        
+            </div>
+        </div>
+        <div class="menu-card card-second-bg">
+        
+            <div class="card-heading">
+                <h4>Chicken Wings 7.80</h4>
+            </div>
+        
+            <div class="card-body">
+                <p>Served with sour cream and tumbled in your choice of sauce</p>
+                <h4>Choose from:</h4>
+        
+                <span class="menu-card-text">BBQ 727 kcal
+                    <div class="card-icon">
+                        <span class="info-icon"></span>
+                    </div>
+                </span>
+                <span class="menu-card-text">Hot sauce 674 kcal
+                    <div class="card-icon">
+                        <span class="info-icon"></span>
+                    </div>
+                </span>
+        
+        
+        
+            </div>
+        </div>
+        
+        <div class="menu-card">
+        
+            <div class="card-heading">
+                <h4>Garlic Pizza Bread 4.50</h4>
+                <div class="menu-card-text">
+                    <span>764 kcal</span>
+        
+                    <div class="card-icon">
+                        <span class="info-icon"></span>
+                    </div>
+        
+                    <div class="card-icon v-icon">
+                        <p class="tooltiptext-leaf-2">suitable for vegetarians</p>
+                        <span class="leaf-2">V</span>
+                    </div>
+        
+        
+                    <div class="card-icon vg-icon">
+                        <p class="tooltiptext-leaf-1">Suitable for Vegans</p>
+                        <span class="leaf-1">VG</span>
+                    </div>
+        
+                    <div class="card-icon new-icon">
+                        <p class="tooltiptext-new">New</p>
+                        <span class="new-text">NEW</span>
+                    </div>
+        
+                </div>
+        
+        
+        
+            </div>
+        
+            <div class="card-body">
+                <p>Big enough for 2 people</p>
+                <h4>Add:</h4>
+        
+                <span class="menu-card-text">Mozzarella 0.50 936 kcal
+                    <div class="card-icon">
+                        <span class="info-icon"></span>
+                    </div>
+        
+                    <div class="card-icon v-icon">
+                        <p class="tooltiptext-leaf-2">suitable for vegetarians</p>
+                        <span class="leaf-2">V</span>
+                    </div>
+                </span>
+        
+                <span class="menu-card-text">Mozzarella 0.50 936 kcal
+                    <div class="card-icon">
+                        <span class="info-icon"></span>
+                    </div>
+        
+                    <div class="card-icon vg-icon">
+                        <p class="tooltiptext-leaf-1">Suitable for Vegans</p>
+                        <span class="leaf-1">VG</span>
+                    </div>
+                </span>
+        
+        
+            </div>
+        </div>
+           <div class="menu-card">
+        <div class="card-img">
+            <img src="/images/item-4.jpg" alt="food">
+        </div>
+               <div class="card-heading">
+                   <h4>Garlic Pizza Bread 4.50</h4>
+                   <div class="menu-card-text">
+                       <span>764 kcal</span>
+        
+                       <div class="card-icon">
+                           <span class="info-icon"></span>
+                       </div>
+        
+                       <div class="card-icon v-icon">
+                           <p class="tooltiptext-leaf-2">suitable for vegetarians</p>
+                           <span class="leaf-2">V</span>
+                       </div>
+        
+        
+                       <div class="card-icon vg-icon">
+                           <p class="tooltiptext-leaf-1">Suitable for Vegans</p>
+                           <span class="leaf-1">VG</span>
+                       </div>
+        
+                       <div class="card-icon new-icon">
+                           <p class="tooltiptext-new">New</p>
+                           <span class="new-text">NEW</span>
+                       </div>
+        
+                   </div>
+               </div>
+        
+                <div class="card-body">
+                    <p>Big enough for 2 people</p>
+                    <h4>Add:</h4>
+        
+                    <span class="menu-card-text">Mozzarella 0.50 936 kcal
+                        <div class="card-icon">
+                            <span class="info-icon"></span>
+                        </div>
+        
+                        <div class="card-icon v-icon">
+                            <p class="tooltiptext-leaf-2">suitable for vegetarians</p>
+                            <span class="leaf-2">V</span>
+                        </div>
+                    </span>
+        
+                    <span class="menu-card-text">Mozzarella 0.50 936 kcal
+                        <div class="card-icon">
+                            <span class="info-icon"></span>
+                        </div>
+        
+                        <div class="card-icon vg-icon">
+                            <p class="tooltiptext-leaf-1">Suitable for Vegans</p>
+                            <span class="leaf-1">VG</span>
+                        </div>
+                    </span>
+        
+        
+                </div>
+           </div>
+           <div class="menu-card">
+        
+               <div class="card-heading">
+                   <h4>Garlic Pizza Bread 4.50</h4>
+                   <div class="menu-card-text">
+                       <span>764 kcal</span>
+        
+                       <div class="card-icon">
+                           <span class="info-icon"></span>
+                       </div>
+        
+                       <div class="card-icon v-icon">
+                           <p class="tooltiptext-leaf-2">suitable for vegetarians</p>
+                           <span class="leaf-2">V</span>
+                       </div>
+        
+        
+                       <div class="card-icon vg-icon">
+                           <p class="tooltiptext-leaf-1">Suitable for Vegans</p>
+                           <span class="leaf-1">VG</span>
+                       </div>
+        
+                       <div class="card-icon new-icon">
+                           <p class="tooltiptext-new">New</p>
+                           <span class="new-text">NEW</span>
+                       </div>
+        
+                   </div>
+        
+        
+        
+               </div>
+        
+            <div class="card-body">
+                <p>Big enough for 2 people</p>
+                <h4>Add:</h4>
+        
+                <span class="menu-card-text">Mozzarella 0.50 936 kcal
+                    <div class="card-icon">
+                        <span class="info-icon"></span>
+                    </div>
+        
+                    <div class="card-icon v-icon">
+                        <p class="tooltiptext-leaf-2">suitable for vegetarians</p>
+                        <span class="leaf-2">V</span>
+                    </div>
+                </span>
+        
+                <span class="menu-card-text">Mozzarella 0.50 936 kcal
+                    <div class="card-icon">
+                        <span class="info-icon"></span>
+                    </div>
+        
+                    <div class="card-icon vg-icon">
+                        <p class="tooltiptext-leaf-1">Suitable for Vegans</p>
+                        <span class="leaf-1">VG</span>
+                    </div>
+                </span>
+        
+        
+            </div>
+           </div>
+          
+           </div>
+        
+        </div>
+    </div>
+
+</section>
+
+<section class="burgers-menues">
+    <div class="container">
+    <div class="menu-heanding">
+        <h2 class="menu-main-heading">Burgers & Hot Dogs</h2>
+        <p class="menu-heading-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quisquam tempore ipsa, unde esse tempora delectus corrupti nulla in reiciendis.</p>
+    </div>
+        <div class="menu-items">
+            <div class="grid-1">
+                <h3 class="menu-sub-heading">Beef</h3>
+                <div class="menu-card">
+            <div class="card-img">
+        <img src="/images/catg-4.jpg" alt="food">
+              </div>
+                    <div class="card-heading">
+                        <h4>Garlic Pizza Bread 4.50</h4>
+                        <div class="menu-card-text">
+                            <span>764 kcal</span>
+     
+                            <div class="card-icon">
+                                <span class="info-icon"></span>
+                            </div>
+     
+                            <div class="card-icon new-icon">
+                                <p class="tooltiptext-new">New</p>
+                                <span class="new-text">NEW</span>
+                            </div>
+     
+                        </div>
+     
+     
+     
+                    </div>
+     
+                    <div class="card-body">
+                        <p>Big enough for 2 people Lorem ipsum dolor Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+                <div class="grid-1">
+                    <h3 class="menu-sub-heading">Vegan</h3>
+                    <div class="menu-card">
+                        <div class="card-heading">
+                            <h4>Garlic Pizza Bread 4.50</h4>
+                            <div class="menu-card-text">
+                                <span>764 kcal</span>
+                
+                                <div class="card-icon">
+                                    <span class="info-icon"></span>
+                                </div>
+                
+                                <div class="card-icon new-icon">
+                                    <p class="tooltiptext-new">New</p>
+                                    <span class="new-text">NEW</span>
+                                </div>
+                
+                            </div>
+                        </div>
+                
+                        <div class="card-body">
+                            <p>Big enough for 2 people</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     
+            <div class="grid-2">
+     
+                <div class="menu-card">
+     
+                    <div class="card-heading">
+                        <h4>Chicken Wings 7.80</h4>
+                        <div class="card-icon">
+                            <span class="info-icon"></span>
+                        </div>
+                    </div>
+     
+                    <div class="card-body">
+                        <p>Served with sour cream and tumbled in your choice of sauce</p>
+     
+     
+                    </div>
+                </div>
+                <div class="menu-card card-second-bg">
+     
+                    <div class="card-heading">
+                        <h4>Chicken Wings 7.80</h4>
+                        <div class="card-icon">
+                            <span class="info-icon"></span>
+                        </div>
+                    </div>
+     
+                    <div class="card-body">
+                        <p>Served with sour cream and tumbled in your choice of sauce</p>
+     
+                    </div>
+                </div>
+                <div class="menu-card">
+     
+                    <div class="card-heading">
+                        <h4>Chicken Wings 7.80</h4>
+                        <div class="card-icon">
+                            <span class="info-icon"></span>
+                        </div>
+                    </div>
+     
+                    <div class="card-body">
+                        <p>Served with sour cream and tumbled in your choice of sauce</p>
+     
+                    </div>
+                </div>
+     
+     
+     
+     
+            </div>
+
+            <div class="grid-1">
+                <h3 class="menu-sub-heading">Chicken</h3>
+            
+                <div class="menu-card">
+            
+                    <div class="card-heading">
+                        <h4>Chicken Wings 7.80</h4>
+                        <div class="card-icon">
+                            <span class="info-icon"></span>
+                        </div>
+                        <div class="card-icon new-icon">
+                            <p class="tooltiptext-new">New</p>
+                            <span class="new-text">NEW</span>
+                        </div>
+                    </div>
+            
+                    <div class="card-body">
+                        <p>Served with sour cream and tumbled in your choice of sauce</p>
+            
+            
+                    </div>
+                </div>
+            
+            
+            </div>
+            
+            <div class="grid-2">
+                <div class="menu-card">
+                    <div class="card-heading">
+                        <h4>Garlic Pizza Bread 4.50</h4>
+                        <div class="menu-card-text">
+                            <span>764 kcal</span>
+            
+                            <div class="card-icon">
+                                <span class="info-icon"></span>
+                            </div>
+            
+                            <div class="card-icon new-icon">
+                                <p class="tooltiptext-new">New</p>
+                                <span class="new-text">NEW</span>
+                            </div>
+            
+                        </div>
+            
+            
+            
+                    </div>
+            
+                    <div class="card-body">
+                        <p>Big enough for 2 people</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-1">
+                <h3 class="menu-sub-heading">Hot Dogs</h3>
+            
+                <div class="menu-card">
+            
+                    <div class="card-heading">
+                        <h4>Chicken Wings 7.80</h4>
+                        <div class="card-icon">
+                            <span class="info-icon"></span>
+                        </div>
+                    </div>
+            
+                    <div class="card-body">
+                        <p>Served with sour cream and tumbled in your choice of sauce</p>
+            
+            
+                    </div>
+                </div>
+                <div class="menu-card card-second-bg">
+            
+                    <div class="card-heading">
+                        <h4>Chicken Wings 7.80</h4>
+                        <div class="card-icon">
+                            <span class="info-icon"></span>
+                        </div>
+                    </div>
+            
+                    <div class="card-body">
+                        <p>Served with sour cream and tumbled in your choice of sauce</p>
+            
+                    </div>
+                </div>
+                <div class="menu-card">
+            
+                    <div class="card-heading">
+                        <h4>Burger Choices</h4>
+                    </div>
+            
+                    <div class="card-body">
+                        <span class="menu-card-text">Lorem,ipsum dolor.<span class="price">0.50</span> 936 kcal
+                            <div class="card-icon">
+                                <span class="info-icon"></span>
+                            </div>
+            
+                            <div class="card-icon vg-icon">
+                                <p class="tooltiptext-leaf-1">Suitable for Vegans</p>
+                                <span class="leaf-1">VG</span>
+                            </div>
+                        </span>
+                        <span class="menu-card-text">Lorem,ipsum dolor.<span class="price">0.50</span> 936 kcal
+                            <div class="card-icon">
+                                <span class="info-icon"></span>
+                            </div>
+            
+                            <div class="card-icon vg-icon">
+                                <p class="tooltiptext-leaf-1">Suitable for Vegans</p>
+                                <span class="leaf-1">VG</span>
+                            </div>
+                        </span>
+                        <span class="menu-card-text">Lorem,ipsum dolor.<span class="price">0.50</span> 936 kcal
+                            <div class="card-icon">
+                                <span class="info-icon"></span>
+                            </div>
+            
+                            <div class="card-icon vg-icon">
+                                <p class="tooltiptext-leaf-1">Suitable for Vegans</p>
+                                <span class="leaf-1">VG</span>
+                            </div>
+                        </span>
+                        <span class="menu-card-text">Lorem,ipsum dolor.<span class="price">0.50</span> 936 kcal
+                            <div class="card-icon">
+                                <span class="info-icon"></span>
+                            </div>
+            
+                            <div class="card-icon vg-icon">
+                                <p class="tooltiptext-leaf-1">Suitable for Vegans</p>
+                                <span class="leaf-1">VG</span>
+                            </div>
+                        </span>
+                        <span class="menu-card-text">Lorem,ipsum dolor.<span class="price">0.50</span> 936 kcal
+                            <div class="card-icon">
+                                <span class="info-icon"></span>
+                            </div>
+            
+                            <div class="card-icon vg-icon">
+                                <p class="tooltiptext-leaf-1">Suitable for Vegans</p>
+                                <span class="leaf-1">VG</span>
+                            </div>
+                        </span>
+                        <span class="menu-card-text">Lorem,ipsum dolor.<span class="price">0.50</span> 936 kcal
+                            <div class="card-icon">
+                                <span class="info-icon"></span>
+                            </div>
+            
+                            <div class="card-icon vg-icon">
+                                <p class="tooltiptext-leaf-1">Suitable for Vegans</p>
+                                <span class="leaf-1">VG</span>
+                            </div>
+                        </span>
+                        <span class="menu-card-text">Lorem,ipsum dolor.<span class="price">0.50</span> 936 kcal
+                            <div class="card-icon">
+                                <span class="info-icon"></span>
+                            </div>
+            
+                            <div class="card-icon vg-icon">
+                                <p class="tooltiptext-leaf-1">Suitable for Vegans</p>
+                                <span class="leaf-1">VG</span>
+                            </div>
+                        </span>
+                        <span class="menu-card-text">Lorem,ipsum dolor.<span class="price">0.50</span> 936 kcal
+                            <div class="card-icon">
+                                <span class="info-icon"></span>
+                            </div>
+            
+                            <div class="card-icon vg-icon">
+                                <p class="tooltiptext-leaf-1">Suitable for Vegans</p>
+                                <span class="leaf-1">VG</span>
+                            </div>
+                        </span>
+                        <span class="menu-card-text">Lorem,ipsum dolor.<span class="price">0.50</span> 936 kcal
+                            <div class="card-icon">
+                                <span class="info-icon"></span>
+                            </div>
+            
+                            <div class="card-icon vg-icon">
+                                <p class="tooltiptext-leaf-1">Suitable for Vegans</p>
+                                <span class="leaf-1">VG</span>
+                            </div>
+                        </span>
+                        <span class="menu-card-text">Lorem,ipsum dolor.<span class="price">0.50</span> 936 kcal
+                            <div class="card-icon">
+                                <span class="info-icon"></span>
+                            </div>
+            
+                            <div class="card-icon vg-icon">
+                                <p class="tooltiptext-leaf-1">Suitable for Vegans</p>
+                                <span class="leaf-1">VG</span>
+                            </div>
+                        </span>
+            
+                    </div>
+                </div>
+            
+            </div>
+            
+            <div class="grid-2">
+            
+                <div class="menu-card">
+                    <div class="card-img">
+                        <img src="/images/item-5.jpg" alt="food">
+                    </div>
+                    <div class="card-heading">
+                        <h4>Garlic Pizza Bread 4.50</h4>
+                        <div class="menu-card-text">
+                            <span>764 kcal</span>
+            
+                            <div class="card-icon">
+                                <span class="info-icon"></span>
+                            </div>
+            
+                            <div class="card-icon new-icon">
+                                <p class="tooltiptext-new">New</p>
+                                <span class="new-text">NEW</span>
+                            </div>
+            
+                        </div>
+            
+            
+            
+                    </div>
+            
+                    <div class="card-body">
+                        <p>Big enough for 2 people</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+            
+</section>
+<p class="menu-footer">Adults need around 2000 kcal a day</p>
+
+</body>
+
+</html>
