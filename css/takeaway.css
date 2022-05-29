@@ -45,50 +45,31 @@ img {
     padding: .5rem 1rem;
     z-index: 99999;
     width: 100%;
+    display: none;
 }
 
-
-
-.brand{
-    font-size: 3rem;
-    font-family: var(--brand-font);
-    color: var(--color-secondary);
-}
-.cart{
- position: absolute;
-    right: 0;
-}
-
-/* Icons  */
-.icon {
-    height: 1.5rem;
-    width: 1.5rem;
-    cursor: pointer;
-    color: var(--color-secondary);
-}
-
-.icon-small {
-    height: 2.5rem;
-    width: 2.5rem;
-}
 
 .icon-btn{
     background: none;
     border: none;
-    cursor: pointer;
 }
 
+.cart-icon-mobile{
+    height: 2rem;
+    width: 2rem;
+}
 
-.icon-wraper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.basket{
+    display: none;
     align-items: center;
+    gap: .5rem;
 }
+
+
 
 /* Inputs */
 
-.input-group {
+.input-group  {
     position: relative;
     display: flex;
     align-items: center;
@@ -270,11 +251,39 @@ background: url('https://api.iconify.design/entypo/location-pin.svg?color=%23b82
     background-size: cover;
 }
 
+.mobiel-nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.cart-icon-mobile {
+    position: absolute;
+    right: 1rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+}
 
 
 
 @media screen and (min-width: 991px) {
+    .basket {
+        display: flex;
+        color: var(--color-secondary);
+        font-size: 0.9rem;
+        font-weight: 900;
+    }
+  
+    .cart-icon-mobile {
+        display: none;
+    }
+
+    .cart-icon {
+        height: 2rem;
+        width: 2rem;
+    }
 
     .drid{
         display: grid;
@@ -288,7 +297,7 @@ background: url('https://api.iconify.design/entypo/location-pin.svg?color=%23b82
     bottom: 0;
     
 }
-    
+
 }
 @media screen and (max-width: 320px) {
 

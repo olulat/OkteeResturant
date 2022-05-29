@@ -28,6 +28,9 @@ img {
     object-position: center;
 }
 
+.grid{
+    margin-top: 5rem;
+}
 
 .container {
     display: flex;
@@ -133,9 +136,23 @@ background: var(--color-primary);
     padding: 0.6rem 2rem;
 }
 
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 380px) {
 .kid-card-heading {
     height: auto;
+}
+.text-over-img{
+    font-size: 1.5rem;
+}
+.text-heanding{
+    font-size: 1rem;
+}
+
+.kids-card {
+    width: 80vw;
+    margin: auto;
+}
+.kid-card-first{
+    max-height: 200px;
 }
 }
 @media screen and (min-width: 767px) {

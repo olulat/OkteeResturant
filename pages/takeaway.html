@@ -11,17 +11,87 @@
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600&family=Passions+Conflict&family=Poppins:ital,wght@0,100;0,300;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="/css/nav-footer.css">
 <link rel="stylesheet" href="/css/takeaway.css">
+<script src="/js/menu.js" defer></script>
+<script src="/js/nav.js" defer></script>
     <title>The Resturant</title>
 </head>
 
 <body>
+
+    <header>
+        <nav class="nav-bars">
+    
+            <div class="container">
+                <div class="nav-content">
+                    <div class="mobiel-nav">
+                    <a href="/"><span class="brand to-close">YourBrand</span></a>
+                    <svg class="cart-icon-mobile">
+                        <use xlink:href="/icons/sprite.svg#shopping"></use>
+                    </svg>
+                    </div>
+    
+                    <div class="side-nav">
+                        <div class="side-nav-content">
+                            <div class="top-side-nav">
+                                <span class="brand">YourBrand</span>
+                                <svg class="icon icon-small" id="toggle-close-btn">
+                                    <use xlink:href="/icons/sprite.svg#close"></use>
+                                </svg>
+                            </div>
+                            <h2 class="side-nav-heading">Find a restaurant</h2>
+                            <form action="#">
+                                <div class="input-group">
+                                    <button class="btn" type="submit">
+                                        <svg class="icon">
+                                            <use xlink:href="/icons/sprite.svg#location"></use>
+                                        </svg>
+                                    </button>
+                                    <input type="search" class="input" placeholder="Search by town,city or postcode" />
+                                    <button class="btn" type="submit">
+                                        <svg class="icon in-form-icon">
+                                            <use xlink:href="/icons/sprite.svg#search"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <ul class="list">
+                            <li><a href="takeaway.html" class="links">Takeaway</a></li>
+                            <li><a href="find-us.html" class="links">Find us</a></li>
+                            <li><a href="book.html" class="links">Book</a></li>
+                            <li><a href="menu.html" class="links">Our menus</a></li>
+                            <li><a href="kids.html" class="links">Kids</a></li>
+                            <li><a href="gift-vouchers.html" class="links" target="_blank">Gift vouchers</a></li>
+                            <li>
+                                <div class="cart">
+                                    <a href="" class="cart-icon">
+                                        <span class="basket">Basket
+                                            <svg class="cart-icon">
+                                                <use xlink:href="/icons/sprite.svg#shopping"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                
+                                </div>
+                            </li>
+                        </ul>
+    
+                    </div>
+                </div>
+            </div>
+    
+        </nav>
+    
+    </header>
 
     <div class="nav-mobile">
         <div class="brand-wrap">
             <span class="brand">YourBrand</span>
         </div>
         <div class="cart">
+            <span class="basket">Basket</span>
                 <a href="" class="icon-wraper">
                     <svg class="icon icon-small">
                         <use xlink:href="/icons/sprite.svg#shopping"></use>
@@ -137,6 +207,117 @@
         </div>
     </section>
 
+    <div class="bottom-nav">
+        <ul class="bottom-nav-list">
+            <li>
+                <a href="menu.html" class="icon-wraper">
+                    <svg class="icon icon-small">
+                        <use xlink:href="/icons/sprite.svg#menu"></use>
+                    </svg>
+                    Menu
+                </a>
+            </li>
+            <li>
+                <a href="takeaway.html" class="icon-wraper">
+                    <svg class="icon icon-small">
+                        <use xlink:href="/icons/sprite.svg#shopping"></use>
+                    </svg>
+                    Takeaway
+                </a>
+            </li>
+            <li>
+                <a href="find-us.html" class="icon-wraper">
+                    <svg class="icon icon-small">
+                        <use xlink:href="/icons/sprite.svg#pin"></use>
+                    </svg>
+                    Find Us
+                </a>
+            </li>
+            <li>
+                <a href="book.html" class="icon-wraper">
+                    <svg class="icon icon-small">
+                        <use xlink:href="/icons/sprite.svg#calendar"></use>
+                    </svg>
+                    Book
+                </a>
+            </li>
+            <li>
+                <svg class="icon icon-small toggle-icon" id="toggle-btn">
+                    <use xlink:href="/icons/sprite.svg#toggle"></use>
+                </svg>
+            </li>
+    
+        </ul>
+    </div>
+    
+    
+    <footer class="footer to-close">
+        <div class="container">
+    
+            <div class="footer-content">
+                <div class="footer-heading">
+                    <span class="brand">YourBrand</span>
+                    <div class="footer-social">
+                        <svg class="icon icon-large">
+                            <use xlink:href="/icons/sprite.svg#facebook"></use>
+                        </svg>
+                        <svg class="icon icon-large">
+                            <use xlink:href="/icons/sprite.svg#instagram"></use>
+                        </svg>
+                        <svg class="icon icon-large">
+                            <use xlink:href="/icons/sprite.svg#twitter"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-card">
+                        <input type="checkbox" name="footer-accordion" id="about" class="footer-input">
+                        <label for="about" class="accordion-title">About</label>
+                        <ul class="footer-list">
+                            <li><a href="#" class="links">Our Story</a></li>
+                            <li><a href="#" class="links">Sustainability</a></li>
+                        </ul>
+                    </div>
+                    <div class="accordion-card">
+                        <input type="checkbox" name="footer-accordion" id="ourfood" class="footer-input">
+                        <label for="ourfood" class="accordion-title">Our Food</label>
+                        <ul class="footer-list">
+                            <li><a href="#" class="links">Gluteen-free</a></li>
+                            <li><a href="#" class="links">Vegan</a></li>
+                            <li><a href="#" class="links">Kids</a></li>
+                        </ul>
+                    </div>
+                    <div class="accordion-card">
+                        <input type="checkbox" name="footer-accordion" id="careers" class="footer-input">
+                        <label for="careers" class="accordion-title">Careers</label>
+                        <ul class="footer-list">
+                            <li><a href="#" class="links">Jobs</a></li>
+                            <li><a href="#" class="links">Gender Pay Gap Report</a></li>
+                            <li><a href="#" class="links">Mondern Slavery Statement</a></li>
+                            <li><a href="#" class="links">Tip Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="accordion-card">
+                        <input type="checkbox" name="footer-accordion" id="contactus" class="footer-input">
+                        <label for="contactus" class="accordion-title">Contact Us</label>
+                        <ul class="footer-list">
+                            <li><a href="#" class="links">FAQs</a></li>
+                            <li><a href="#" class="links">Guest Services</a></li>
+                            <li><a href="#" class="links">Press</a></li>
+                        </ul>
+                    </div>
+                    <div class="accordion-card">
+                        <h2><a href="#" class="footer-terms">Terms &#38; conditions</a></h2>
+                    </div>
+                    <div class="accordion-card">
+                        <h2><a href="#" class="footer-privacy">Privacy Notice</a></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    </footer>
 </body>
 
 </html>

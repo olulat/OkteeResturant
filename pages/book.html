@@ -11,14 +11,66 @@
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600&family=Passions+Conflict&family=Poppins:ital,wght@0,100;0,300;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-
+<link rel="stylesheet" href="/css/nav-footer.css">
     <link rel="stylesheet" href="/css/book.css">
-    <script src="/js/app.js" defer></script>
+    <script src="/js/nav.js" defer></script>
+    <script src="/js/booking.js" defer></script>
     <title>Book</title>
 </head>
 <body>
+<header>
+    <nav class="nav-bars">
 
-    <section class="banner">
+        <div class="container">
+            <div class="nav-content">
+                <a href="/"><span class="brand to-close">YourBrand</span></a>
+
+                <div class="side-nav">
+                    <div class="side-nav-content">
+                        <div class="top-side-nav">
+                            <span class="brand">YourBrand</span>
+                            <svg class="icon icon-small" id="toggle-close-btn">
+                                <use xlink:href="/icons/sprite.svg#close"></use>
+                            </svg>
+                        </div>
+                        <h2 class="side-nav-heading">Find a restaurant</h2>
+                        <form action="#">
+                            <div class="input-group">
+                                <button class="btn" type="submit">
+                                    <svg class="icon">
+                                        <use xlink:href="/icons/sprite.svg#location"></use>
+                                    </svg>
+                                </button>
+                                <input type="search" class="input" placeholder="Search by town,city or postcode" />
+                                <button class="btn" type="submit">
+                                    <svg class="icon in-form-icon">
+                                        <use xlink:href="/icons/sprite.svg#search"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="list">
+                        <li><a href="takeaway.html" class="links">Takeaway</a></li>
+                        <li><a href="find-us.html" class="links">Find us</a></li>
+                        <li><a href="book.html" class="links">Book</a></li>
+                        <li><a href="menu.html" class="links">Our menus</a></li>
+                        <li><a href="kids.html" class="links">Kids</a></li>
+                        <li><a href="gift-vouchers.html" class="links" target="_blank">Gift vouchers</a></li>
+                        <li>
+                            <a href="book.html" class="btn btn-secondary-color btn-small">Book Now</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+</header>
+
+    <section class="banner to-close">
 
         <div class="banner-wrap">
             <img src="/images/banar-1.jpg" alt="Selection of food " class="hero__img">
@@ -30,167 +82,269 @@
 
     </section>
 
-    <section class="main">
+    <section class="main to-close">
  
-        <div class="booking-nav">
-        <span class="book-heading book-nav-active">Find a table</span>
-        <span class="book-heading">Your details</span>
-        </div>
-
-   
-   <form action="#">
-       
-       <div class="form-1 form-active">
-           <article class="find-table">
-       
-               <label for="location">Where would you like to book?</label>
-               <div class="input-group">
-                   <button class="btn" type="submit">
-                       <svg class="icon">
-                           <use xlink:href="/icons/sprite.svg#location"></use>
-                       </svg>
-                   </button>
-                  <input id="location" type="search "class="input" placeholder="Search by town,city or postcode" />
-                   <button class="btn" type="submit">
-                       <svg class="icon in-form-icon">
-                           <use xlink:href="/icons/sprite.svg#search"></use>
-                       </svg>
-                   </button>
-               </div>
-               <a href="#" class="location-change">Change location</a>
-       
-               <div class="dropdown">
-                   <label for="adult-number">How many adults?</label>
-                   <select id="adult-number" name="adult-number" class="input">
-                       <option value="2">2</option>
-                       <option value="3">3</option>
-                       <option value="4">4</option>
-                       <option value="5">5</option>
-                       <option value="6">6</option>
-                       <option value="7">7</option>
-                       <option value="8">8</option>
-                       <option value="9">9</option>
-                       <option value="10">10</option>
-                   </select>
-               </div>
-       
-       
-               <div class="dropdown">
-                   <label for="children-number">How many children?</label>
-                   <select id="children-number" name="children-number" class="input">
-                       <option value="0">No Children</option>
-                       <option value="1">1</option>
-                       <option value="2">2</option>
-                       <option value="3">3</option>
-                       <option value="4">4</option>
-                       <option value="5">5</option>
-                       <option value="6">6</option>
-                       <option value="7">7</option>
-                       <option value="8">8</option>
-                   </select>
-               </div>
-               <small class="children-notice">Please include all children, no matter how little they are</small><br>
-       
-           <label for="booking-date">When would you like to come?</label>
-       
-              <div class="datetime-wrap">
-       
-                   <input type="date" name="date" id="booking-date" class="input date">
-                   <input type="time" name="time" class="input time">
-       
-               </div>
-           </article>
-        <div class="form-btn-wrap">
-            <button type="submit" class="btn long-btn green-btn">Find a table</button>
-        </div>
-       </div>
-       
-       <div class="form-2">
-       
-        <div class="grid">
-<article class="booking-summary">
-    <div class="summary-card">
-        <div class="summary-card-heading">
-            Booking Summary
-        </div>
-        <div class="summary-card-body">
-            <ul>
-                <li>
-                    <svg class="icon">
-                        <use xlink:href="/icons/sprite.svg#location"></use>
-                    </svg>
-                    Resturant location
-                </li>
-                <li>
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em"
-                        height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                        <path fill="currentColor"
-                            d="M12 2a5 5 0 1 0 5 5a5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3a3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z">
-                    </svg>
-                    10
-                </li>
-
-                <li>
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em"
-                        height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                        <path fill="currentColor"
-                            d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z">
-                    </svg>
-                    Booking date
-                </li>
-                <li>
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em"
-                        height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                        <path fill="currentColor"
-                            d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8s8 3.58 8 8s-3.58 8-8 8zm.5-13H11v6l5.25 3.15l.75-1.23l-4.5-2.67z">
-                    </svg>
-                    Booking time
-                </li>
-            </ul>
-        </div>
-    </div>
-</article>
-
-            <article class="your-details">
-                   <label for="name">Whats's your name?</label>
-                   <input type="text" id="name" placeholder="Your name" class="input">
-                   <label for="email">Email</label>
-                   <input type="email" id="email" placeholder="Your email" class="input">
-                   <label for="phone">Mobile phone number</label>
-                   <input type="number" id="phone" placeholder="Your phone number" class="input">
-                <div class="checkbox-wraper">
-                    <div class="special-request">
-                        <input type="checkbox" name="special-request" id="special-request">
-                        Add a special request?</label>
-                        <textarea name="special-request" id="special-request" maxlength="200"
-                            placeholder="Enter your request maxlength 200" class="input request-input"></textarea>
-                    </div>
-                    <div class="conditions">
-                        <input type="checkbox" name="conditions" id="conditions">
-                        <label for="conditions">Lorem ipsum dolor sit, amet consectetur ? <a href="#" class="condition-link">terms and
-                                conditions</a></label>
-                    </div>
+        <div class="book-container">
+            <div class="booking-nav">
+            <span class="book-heading book-nav-active" id="find-table">Find a table</span>
+            <span class="book-heading" id="your-detals">Your details</span>
+            </div>
             
-                    <div class="promo">
-                        <input type="checkbox" name="promo" id="promo">
-                        <label for="promo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, ut!</label>
-                        <span class="checkmark"></span>
-                    </div>
+               
+               <form action="#">
+                   
+                   <div class="form-1 form-active">
+               <article class="find-table">
+                   <label for="location">Where would you like to book?</label>
+                   <div class="book-input-group">
+                       <button class="book-btn" type="submit">
+                           <svg class="book-icon">
+                               <use xlink:href="/icons/sprite.svg#location"></use>
+                           </svg>
+                       </button>
+                      <input id="location" type="search "class="book-input" placeholder="Search by town,city or postcode" />
+                       <button class="book-btn" type="submit">
+                           <svg class="book-icon in-form-icon">
+                               <use xlink:href="/icons/sprite.svg#search"></use>
+                           </svg>
+                       </button>
+                   </div>
+                   <a href="#" class="location-change">Change location</a>
+                   <div class="dropdown">
+                       <label for="adult-number">How many adults?</label>
+                       <select id="adult-number" name="adult-number" class="book-input">
+                           <option value="2">2</option>
+                           <option value="3">3</option>
+                           <option value="4">4</option>
+                           <option value="5">5</option>
+                           <option value="6">6</option>
+                           <option value="7">7</option>
+                           <option value="8">8</option>
+                           <option value="9">9</option>
+                           <option value="10">10</option>
+                       </select>
+                   </div>
+                   <div class="dropdown">
+                       <label for="children-number">How many children?</label>
+                       <select id="children-number" name="children-number" class="book-input">
+                           <option value="0">No Children</option>
+                           <option value="1">1</option>
+                           <option value="2">2</option>
+                           <option value="3">3</option>
+                           <option value="4">4</option>
+                           <option value="5">5</option>
+                           <option value="6">6</option>
+                           <option value="7">7</option>
+                           <option value="8">8</option>
+                       </select>
+                   </div>
+                   <small class="children-notice">Please include all children, no matter how little they are</small><br>
+               <label for="booking-date">When would you like to come?</label>
+                  <div class="datetime-wrap">
+                       <input type="date" name="date" id="booking-date" class="book-input date">
+                       <input type="time" name="time" class="book-input time">
+                   </div>
+               </article>
+            <div class="form-btn-wrap">
+                <button type="submit" class="book-btn book-long-btn book-green-btn">Find a table</button>
+            </div>
+                   </div>
+                   
+                   <div class="form-2">
+            <div class="grid">
+            <article class="booking-summary">
+                <div class="summary-card">
+            <div class="summary-card-heading">
+                Booking Summary
+            </div>
+            <div class="summary-card-body">
+                <ul>
+                    <li>
+                        <svg class="book-icon">
+                            <use xlink:href="/icons/sprite.svg#location"></use>
+                        </svg>
+                        Resturant location
+                    </li>
+                    <li>
+                        <svg class="book-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em"
+                            height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 2a5 5 0 1 0 5 5a5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3a3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z">
+                        </svg>
+                        10
+                    </li>
+                    <li>
+                        <svg class="book-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em"
+                            height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z">
+                        </svg>
+                        Booking date
+                    </li>
+                    <li>
+                        <svg class="book-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em"
+                            height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8s8 3.58 8 8s-3.58 8-8 8zm.5-13H11v6l5.25 3.15l.75-1.23l-4.5-2.67z">
+                        </svg>
+                        Booking time
+                    </li>
+                </ul>
+            </div>
                 </div>
-                   </article>
+            </article>
+                <article class="your-details">
+                       <label for="name">Whats's your name?</label>
+                       <input type="text" id="name" placeholder="Your name" class="book-input">
+                       <label for="email">Email</label>
+                       <input type="email" id="email" placeholder="Your email" class="book-input">
+                       <label for="phone">Mobile phone number</label>
+                       <input type="number" id="phone" placeholder="Your phone number" class="book-input">
+                    <div class="checkbox-wraper">
+                        <div class="special-request">
+                            <input type="checkbox" name="special-request" id="special-request">
+                            Add a special request?</label>
+                            <textarea name="special-request" id="special-request" maxlength="200"
+                                placeholder="Enter your request maxlength 200" class="book-input request-input"></textarea>
+                        </div>
+                        <div class="conditions">
+                            <input type="checkbox" name="conditions" id="conditions">
+                            <label for="conditions">Lorem ipsum dolor sit, amet consectetur ? <a href="#" class="condition-link">terms and
+                                    conditions</a></label>
+                        </div>
             
+                        <div class="promo">
+                            <input type="checkbox" name="promo" id="promo">
+                            <label for="promo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, ut!</label>
+                            <span class="checkmark"></span>
+                        </div>
+                    </div>
+                       </article>
+            
+            </div>
+              
+                   <div class="form-btn-wrap">
+                   <button type="submit" class="book-btn book-long-btn book-green-btn">Book now</button>
+                   </div>
+                   
+                   
+                   </div>
+               </form>
         </div>
-          
-       <div class="form-btn-wrap">
-       <button type="submit" class="btn long-btn green-btn">Book now</button>
-       </div>
-       
-       
-       </div>
-   </form>
     
 </section>
 
+<div class="bottom-nav">
+    <ul class="bottom-nav-list">
+        <li>
+            <a href="menu.html" class="icon-wraper">
+                <svg class="icon icon-small">
+                    <use xlink:href="/icons/sprite.svg#menu"></use>
+                </svg>
+                Menu
+            </a>
+        </li>
+        <li>
+            <a href="takeaway.html" class="icon-wraper">
+                <svg class="icon icon-small">
+                    <use xlink:href="/icons/sprite.svg#shopping"></use>
+                </svg>
+                Takeaway
+            </a>
+        </li>
+        <li>
+            <a href="find-us.html" class="icon-wraper">
+                <svg class="icon icon-small">
+                    <use xlink:href="/icons/sprite.svg#pin"></use>
+                </svg>
+                Find Us
+            </a>
+        </li>
+        <li>
+            <a href="book.html" class="icon-wraper">
+                <svg class="icon icon-small">
+                    <use xlink:href="/icons/sprite.svg#calendar"></use>
+                </svg>
+                Book
+            </a>
+        </li>
+        <li>
+            <svg class="icon icon-small toggle-icon" id="toggle-btn">
+                <use xlink:href="/icons/sprite.svg#toggle"></use>
+            </svg>
+        </li>
+
+    </ul>
+</div>
+
+
+<footer class="footer to-close">
+    <div class="container">
+
+        <div class="footer-content">
+            <div class="footer-heading">
+                <span class="brand">YourBrand</span>
+                <div class="footer-social">
+                    <svg class="icon icon-large">
+                        <use xlink:href="/icons/sprite.svg#facebook"></use>
+                    </svg>
+                    <svg class="icon icon-large">
+                        <use xlink:href="/icons/sprite.svg#instagram"></use>
+                    </svg>
+                    <svg class="icon icon-large">
+                        <use xlink:href="/icons/sprite.svg#twitter"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="accordion-content">
+                <div class="accordion-card">
+                    <input type="checkbox" name="footer-accordion" id="about" class="footer-input">
+                    <label for="about" class="accordion-title">About</label>
+                    <ul class="footer-list">
+                        <li><a href="#" class="links">Our Story</a></li>
+                        <li><a href="#" class="links">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="accordion-card">
+                    <input type="checkbox" name="footer-accordion" id="ourfood" class="footer-input">
+                    <label for="ourfood" class="accordion-title">Our Food</label>
+                    <ul class="footer-list">
+                        <li><a href="#" class="links">Gluteen-free</a></li>
+                        <li><a href="#" class="links">Vegan</a></li>
+                        <li><a href="#" class="links">Kids</a></li>
+                    </ul>
+                </div>
+                <div class="accordion-card">
+                    <input type="checkbox" name="footer-accordion" id="careers" class="footer-input">
+                    <label for="careers" class="accordion-title">Careers</label>
+                    <ul class="footer-list">
+                        <li><a href="#" class="links">Jobs</a></li>
+                        <li><a href="#" class="links">Gender Pay Gap Report</a></li>
+                        <li><a href="#" class="links">Mondern Slavery Statement</a></li>
+                        <li><a href="#" class="links">Tip Policy</a></li>
+                    </ul>
+                </div>
+                <div class="accordion-card">
+                    <input type="checkbox" name="footer-accordion" id="contactus" class="footer-input">
+                    <label for="contactus" class="accordion-title">Contact Us</label>
+                    <ul class="footer-list">
+                        <li><a href="#" class="links">FAQs</a></li>
+                        <li><a href="#" class="links">Guest Services</a></li>
+                        <li><a href="#" class="links">Press</a></li>
+                    </ul>
+                </div>
+                <div class="accordion-card">
+                    <h2><a href="#" class="footer-terms">Terms &#38; conditions</a></h2>
+                </div>
+                <div class="accordion-card">
+                    <h2><a href="#" class="footer-privacy">Privacy Notice</a></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</footer>
 </body>
 
 </html>
